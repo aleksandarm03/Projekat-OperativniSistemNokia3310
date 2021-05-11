@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D353AEBD-8957-4EEE-BF65-77032403D820}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nokia3310</RootNamespace>
+    <AssemblyName>Nokia3310</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WhatsAppApi">
+      <HintPath>..\WHATAPP_API_2016\x64\WhatsAppApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Beleske.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Galerija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Galerija.Designer.cs">
+      <DependentUpon>Galerija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helikopter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helikopter.Designer.cs">
+      <DependentUpon>Helikopter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBeleske.cs" />
+    <Compile Include="Igrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Igrice.Designer.cs">
+      <DependentUpon>Igrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternetExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternetExplorer.Designer.cs">
+      <DependentUpon>InternetExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kalkulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kalkulator.Designer.cs">
+      <DependentUpon>Kalkulator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kokoska.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kokoska.Designer.cs">
+      <DependentUpon>Kokoska.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontakti.cs" />
+    <Compile Include="MediaFile.cs" />
+    <Compile Include="MediaPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediaPlayer.Designer.cs">
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mine.Designer.cs">
+      <DependentUpon>Mine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notes.Designer.cs">
+      <DependentUpon>Notes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtvoriNoviForm.cs" />
+    <Compile Include="PacMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PacMan.Designer.cs">
+      <DependentUpon>PacMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polje.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Poruka.cs" />
+    <Compile Include="PoziviIPoruke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoziviIPoruke.Designer.cs">
+      <DependentUpon>PoziviIPoruke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangLista.cs" />
+    <Compile Include="RangListaHelikopter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RangListaHelikopter.Designer.cs">
+      <DependentUpon>RangListaHelikopter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RangListaZmijice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RangListaZmijice.Designer.cs">
+      <DependentUpon>RangListaZmijice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sat.Designer.cs">
+      <DependentUpon>Sat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XO.Designer.cs">
+      <DependentUpon>XO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zmijice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zmijice.Designer.cs">
+      <DependentUpon>Zmijice.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Galerija.resx">
+      <DependentUpon>Galerija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helikopter.resx">
+      <DependentUpon>Helikopter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Igrice.resx">
+      <DependentUpon>Igrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternetExplorer.resx">
+      <DependentUpon>InternetExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kalkulator.resx">
+      <DependentUpon>Kalkulator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kokoska.resx">
+      <DependentUpon>Kokoska.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediaPlayer.resx">
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mine.resx">
+      <DependentUpon>Mine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notes.resx">
+      <DependentUpon>Notes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PacMan.resx">
+      <DependentUpon>PacMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoziviIPoruke.resx">
+      <DependentUpon>PoziviIPoruke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RangListaHelikopter.resx">
+      <DependentUpon>RangListaHelikopter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RangListaZmijice.resx">
+      <DependentUpon>RangListaZmijice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sat.resx">
+      <DependentUpon>Sat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XO.resx">
+      <DependentUpon>XO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zmijice.resx">
+      <DependentUpon>Zmijice.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_hurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_normal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egg basket.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\games.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Halicopter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helicopter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minesweeper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No kia .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No kia 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nokia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pillar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink_guy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_guy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tetris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tic tac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow_guy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\преузимање.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\преузимање %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\преузимање %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\преузимање %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internet-Explorer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obstacle-1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obstacle-2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\running.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play1hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_clock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iphoneLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\преузимање.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skdakdj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\166469739_593265898298263_9204385069801808065_n.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
